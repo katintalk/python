@@ -1,0 +1,5 @@
+data='X-DSPAM-Confidence: 0.8475 '
+a=data.find(':')
+c=float(data[a+2:])
+d=c+1
+print(d)

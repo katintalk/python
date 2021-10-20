@@ -1,0 +1,19 @@
+count=0
+total=0.0
+while True:
+    a=input('Enter a number: ')
+    try:
+        b=float(a)
+    except:
+        if a=='done':
+            break
+        else:
+            print('Invalid input')
+    continue
+try:
+    count=count+1
+    total=total+b
+    aver=total/count
+    print(count, total, aver)
+except:
+    print('not enough info')

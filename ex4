@@ -1,0 +1,11 @@
+hours=input("Enter hours: ")
+rate=input("Enter rate: ")
+h=float(hours)
+r=float(rate)
+regpay=h*r
+if h>40:
+    overpay=(h-40)*(r*1.5)
+    pay=regpay+overpay
+else:
+    pay=regpay
+print("Pay:", pay)

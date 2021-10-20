@@ -1,0 +1,13 @@
+data='X-DSPAM-Co:nfidence: 0.8475 '
+
+i = 0
+colon_search=2
+colon_number=0
+
+while (i < len(data) and (colon_number != colon_search)):
+  if (data[i]==':'):
+    colon_number=colon_number+1
+  i=i+1
+i=i-1
+
+print(i)
